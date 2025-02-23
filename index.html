@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/195ba655c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="head">
+        <div class="container">
+            <h1>
+                <span>W</span>elcome
+            </h1>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#achieve">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>
+                <h1>I'm <span>Sandeep Yaragani</span></h1>MBA Student</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+
+                <div class="about-col1">
+                    <img clas="image" src="./sandeepphoto.jpeg">
+
+                </div>
+                <div class="about-col2">
+                    <h2 class="subt">About Me</h2>
+                    <p>Passionate about data analytics with MBA degree in Business Analytics. Seeking opportunities where I can utilize my analytical, mathematical and technical skills to solve real life problems related to analyzing a big volume of datasets to draw insights that can help with business decisions.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Internship</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br> Python ,Java </li>
+                            <li><span>Data Base</span><br>Mysql,NOSQL </li>
+                            <li><span>Spreadsheet</span><br>Exel</li>
+                            <li><span>Visualization</span><br>Power BI,Tableau Software</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>MBA in Business Analytics</span><br>Malla Reddy College of Engineering and technology(MRCET)
+                                -(7.54 CGPA ) 2022</li>
+                            <li><span>BSC in Statistics</span><br>Kavitha Memorial Degree & PG college
+                                    -(7.00  CGPA ) 2020</li>
+                            <li><span>Inter MPC</span><br>Excellent Junior College -83.4% @)!</li>
+                            <li><span>SSC </span><br>ZPHS Kokkireni - 7.7% 2015</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Experience">
+                        <ul>
+                            <div class="achievement-row">
+                                <div class="Sports">
+                                    <h3 style="color: aqua;">Accenture Virtual Internship - Data Analyst Intern</h3>
+                                    <p><br>●I have understood briefly about the company and the problems they were facing.
+                                        <br>● After gathering the requirements from the clients, I received different Datasets and the Data model. In the next task I have performed Data cleaning and Data Modeling.
+                                        <br>● And then I combined all gathered Datasets and made into a single dataset by using Excel VLOOKUP and Sum IF functions.
+                                        <br>● In the next task I’ve created a ppt presentation by including visuals with Excel pivot charts.
+                                        <br>● Finally, I have given a presentation to the clients with the prepared ppt by explaining the meaningful insights that I found through the analysis.
+                                    </p>
+                
+                                </div>
+                            
+                                
+                            </div>
+                            
+
+                            
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------Achievements--------->
+        <div class="container" id="achieve">
+            <h1 class="ach-h1">EXPERIENCE</h1>
+           
+
+            <div class="achievement-row">
+                <div class="Sports">
+                    <h3 style="color: aqua;">RISK ANALYST</h3>
+                    <P>TVS CREDIT SERVICE LTD.</P>
+                                <p>Jun 2023 - Jul 2024</p>
+                                <li><span id="sub-pro">Requirements Gathering and Analysis:
+                                </span><br>
+                                  -> Work with stakeholders to understand their financial needs and objectives.</br>
+                                  ->Gather, document, and analyze business and financial requirements for new systems or process<br>
+                                </li>
+                                 <li><span id="sub-pro">Process Improvement</span><br>
+                                   -> Analyze current financial processes to identify inefficiencies.<br>
+                                    ->Recommend and implement changes to optimize processes and improve financial performance<br>
+                                </li>
+                                <li><span id="sub-pro">Financial Systems Implementation and Support:
+                                </span><br>
+                                ->Assist in selecting, implementing, and configuring financial systems<br>
+                                ->Ensure that financial systems meet business needs through testing and validation
+                                </li>
+                                <li>
+                                    <br><span id="sub-pro">Data Analysis and Reporting:
+                                    </span><br>
+                                   -> Develop and maintain financial reports and dashboards to provide insights into financial performance.<br>
+     ->Analyze financial data to identify trends, variances, and opportunities for improvement.
+                                </li>
+                                <li><span id="sub-pro">Communication and Stakeholder Engagement:</span><br>
+                                    ->Act as a liaison between finance teams, IT departments, and other business units.<br>
+                ->Facilitate clear communication of financial requirements, process changes, and project update
+                                </li>
+                </div>
+            
+                
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="container" id="achieve">
+        <h1 class="ach-h1">PROJECT</h1>
+        <div class="achievement-row">
+            <div class="Sports">
+                <h3 style="color: aqua;">Analysis of Heritage Products
+                </h3>
+                <p><br>●- Firstly, I’ve downloaded required data from Flipkart website. Ingested this data in MySQL database and
+                    performed ETL to remove outliers, clean up bad records etc. 
+                    <br>● For analysis on different categories, used Excel, VBA macros and pivot table. Figured out best categories
+                    among the different category data.
+                    <br>● Used Tableau and Excel to build various BI dashboards that can show growth in different categories based
+                    on the collected data, how people’s preferences have changed over a period of 5 years
+                    <br>● Prepared a data story and presented that during the submission time in our college. My presentation got A+
+                    in the college.
+                </p>
+
+            </div>
+        
+            
+        </div>
+
+    </div>
+
+
+</div>
+    
+    <!-----HOBBIES
+    <div class="hobbies">
+        <div class="container">
+            <h1>Hobbies</h1>
+            <div class="hob-row">
+            <div class="movies">
+                <h3>Movies</h3>
+            </div>
+
+            <div class="Music">
+                <h3>Music</h3>
+            </div>
+            <div class="play">
+                <h3>Play</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+    -->
+
+
+    <!------CONTACt-->
+    <div class="contact" id="contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <div class="social-icon">
+                        <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank"><i
+                                    class="fa-solid fa-at"></i>sandeep055yerragani@gmail.com</a></p>
+                        <p><a href="https://www.instagram.com/the_m_i_k_e_y_/" target="_blank"> <i
+                                    class="fa-brands fa-square-instagram"></i>the_m_i_k_e_y_</a></p>
+                        <p><a href=""><i class="fa-brands fa-whatsapp"></i>+91 9951813155</a></p>
+                        <P><a href="https://www.linkedin.com/in/sandeep-yaragani/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i>Linkedin</a></P>
+                        <p><a href="https://github.com/Sandeep-055" target="_blank"><i
+                                    class="fa-brands fa-github"></i>GitHub</a></p>
+
+                    </div>
+
+                </div>
+                <div class="contact-left"></div>
+                <div class="contact-left"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+    let val = true;
+
+    function opentab(tabname) {
+
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        val = false;
+
+
+    }
+    var heart = document.getElementById("heart");
+    function heart() {
+        if (heart.classList.contains = "far") {
+            heart.classList.remove("far");
+            heart, classList.add("fas");
+        }
+    }
+
+    var sidemenu = document.getElementById('sidemenu');
+    function closemenu() {
+        sidemenu.style.right = "-200px"
+    }
+    function openmenu() {
+        sidemenu.style.right = "0"
+    }
+
+
+</script>
+
+</html>
